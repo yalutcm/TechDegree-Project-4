@@ -1,0 +1,28 @@
+
+// =====Forms===== //
+
+.form {
+    flex-basis: $hundred-pct;
+  }
+  
+  .input{
+    display: block;
+    width: 94%;
+    margin: $ten-px auto 0;
+    border: none;
+    padding: $ten-px;
+    border-bottom: $br-five-px solid $prime-color;
+
+    &::placeholder {
+      font-size: 0.8em;
+    }
+  }
+  
+  .hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }

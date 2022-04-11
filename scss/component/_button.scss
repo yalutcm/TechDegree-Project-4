@@ -1,0 +1,48 @@
+
+// =====Buttons===== //
+
+.btn {
+   @include button;
+   transition: background-color 500ms;
+  }
+  
+  .default {
+    background-color: $bg-link-color;
+
+    &:hover {
+      background-color: $link-l;
+    }
+  }
+  
+  .error {
+    background-color: $bg-error;
+
+    &:hover {
+      background-color: $error-l;
+    }
+  }
+  
+  .info {
+    background-color: $color-purp;
+
+    &:hover {
+      background-color: $purple-l;
+    }
+  }
+  
+  .success {
+    background-color: $bg-success;
+
+    &:hover {
+      background-color: $success-l;
+    }
+  }
+  
+  .warning {
+    background-color: $bg-warning;
+
+    &:hover {
+      background-color: $warning-l;
+    }
+  }
+  

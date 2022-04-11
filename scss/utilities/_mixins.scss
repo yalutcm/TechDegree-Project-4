@@ -1,0 +1,32 @@
+
+// =====Mixins===== //
+
+@mixin button {
+    margin-top: 15px;
+    width: $hundred-pct;
+    color: $white;
+    font-size: 0.8em;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+// Media Queries
+@mixin mediaq($bp) {
+  @if $bp == 'med' {
+    @media ($bp-med) {
+        @content;
+    }
+  }
+}
+
+// Flex Container mixins
+@mixin flexcss($dis: flex, $dir: null, 
+$wrap: null, $just: null ){
+  display: $dis;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}

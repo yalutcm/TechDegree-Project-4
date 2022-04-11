@@ -1,0 +1,49 @@
+
+// =====Colors Var===== //
+
+$prime-color: #58e1c1;
+$second-color: #777;
+$color-purp: #927bc1;
+$bg-warning: #fd7856;
+$bg-link-color: #51ddfc;
+$bg-error: #e4757a;
+$bg-success: #63cc82;
+$white: #fff;
+
+// =====Base Styles Var===== //
+
+$hundred-pct: 100%;
+$ten-px: 10px;
+$br-five-px: 5px;
+$dis-flex: flex;
+$dis-blk: block;
+
+// =====Function Colors Var===== //
+
+$prime-color-l: lighten($prime-color, 12%);
+$purple-l: lighten($color-purp, 12%);
+$success-l: lighten($bg-success, 12%);
+$error-l: lighten($bg-error, 12%);
+$warning-l: lighten($bg-warning, 12%);
+$link-l: lighten($bg-link-color, 12%);
+
+// =====Theme Colors===== //
+
+$themes: (
+    '1': $color-purp,
+    '2': $bg-warning, 
+    '3': #deb2ee, 
+    '4': #7ee6fd,
+    '5': #88d9a0, 
+    '6': #4da2bb,
+    '7': #ec9fa3,
+    '8': #fd9f85,
+    '9': $bg-error,
+    '10':$bg-success,
+    '11':$bg-link-color,
+    '12': #80e8d1,
+     );
+
+// =====Media Query Var===== //
+
+$bp-med: 'min-width: 768px';

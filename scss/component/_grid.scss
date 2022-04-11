@@ -1,0 +1,29 @@
+
+// =====Grid System ===== //
+
+.container {
+    padding: 0 $ten-px;
+  }
+  
+.row {
+  @include flexcss($dis:flex, $dir:column);
+  padding: 1em $ten-px;
+}
+
+[class^=col] {
+  margin-top: $ten-px;
+  flex-basis: $hundred-pct;
+  min-height: 25px;
+  padding: $ten-px;
+  border-radius: 5px;
+}
+
+@each $theme, $color in $themes {
+  .theme.col-#{$theme} {
+    background-color: $color;
+  }
+}
+
+.card {
+  flex-basis: $hundred-pct;
+}
